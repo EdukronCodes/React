@@ -1,0 +1,12 @@
+{
+  "name": "inventory-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "scripts": {
+    "start": "echo 'Use a bundler like Vite or CRA for development.'"
+  }
+} 

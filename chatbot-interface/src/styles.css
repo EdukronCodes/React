@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+.app-container {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 24px 16px 16px 16px;
+}
+.chatbot-container {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+.chat-history {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 12px;
+  padding: 8px;
+  background: #f9f9f9;
+  border-radius: 6px;
+}
+.message {
+  margin: 6px 0;
+  padding: 8px 12px;
+  border-radius: 16px;
+  max-width: 80%;
+  word-break: break-word;
+}
+.message.user {
+  background: #e0f7fa;
+  align-self: flex-end;
+}
+.message.bot {
+  background: #ececec;
+  align-self: flex-start;
+}
+.input-row {
+  display: flex;
+  gap: 8px;
+}
+.input-row input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.input-row button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #1976d2;
+  color: #fff;
+  cursor: pointer;
+}
+.input-row button:disabled {
+  background: #90caf9;
+  cursor: not-allowed;
+}
+.error {
+  color: #d32f2f;
+  margin-bottom: 8px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .app-container {
+    max-width: 100vw;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 8px;
+  }
+  .chatbot-container {
+    height: 80vh;
+  }
+} 
